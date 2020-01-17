@@ -5,7 +5,7 @@
   "description": "A testbed for unit testing Node",
   "main": "server.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test/",
+    "test": "./node_modules/jasmine-node",
     "start": "node your-script.js"
   },
   "author": "Jordan Kasper",
