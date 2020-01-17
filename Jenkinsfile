@@ -18,8 +18,8 @@ pipeline{
         stage ('build') {
             steps{
                 echo "Building"
-                sh 'npm cache verify'
-                sh 'npm run build'
+                //sh 'npm cache verify'
+                sh 'npm build'
                 }
         }
         stage('Test') {
