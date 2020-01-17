@@ -5,7 +5,8 @@
   "description": "A testbed for unit testing Node",
   "main": "server.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test/"
+    "test": "./node_modules/mocha/bin/mocha test/",
+    "build": "./node_modules/.bin/webpack --config webpack.conf.js"
   },
   "author": "Jordan Kasper",
   "license": "MIT",
