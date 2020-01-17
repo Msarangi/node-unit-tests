@@ -18,7 +18,7 @@ pipeline{
         stage ('build') {
             steps{
                 echo "Building"
-                sh 'npm run clean'
+                sh 'npm cache clean'
                 sh 'npm run build'
                 }
         }
