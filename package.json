@@ -5,7 +5,7 @@
   "description": "A testbed for unit testing Node",
   "main": "server.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --config webpack.config.js",
     "test": "./node_modules/mocha/bin/mocha test/",
     "start": "node your-script.js"
   },
