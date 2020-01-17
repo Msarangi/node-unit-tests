@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test/",
-    "build": "./node_modules/.bin/webpack --config webpack.conf.js"
+    "start": "node your-script.js"
   },
   "author": "Jordan Kasper",
   "license": "MIT",
