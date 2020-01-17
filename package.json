@@ -5,7 +5,7 @@
   "description": "A testbed for unit testing Node",
   "main": "server.js",
   "scripts": {
-    "test": "jasmine",
+    "test": "jasmine-node",
     "start": "node your-script.js"
   },
   "author": "Jordan Kasper",
