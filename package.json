@@ -9,5 +9,5 @@
     "test": "./node_modules/.bin/jasmine-node spec"
   },
   "author": "Jordan Kasper",
-  "license": "MIT",
+  "license": "MIT"
 }
