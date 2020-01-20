@@ -5,9 +5,9 @@ pipeline{
         HTTPS_PROXY = 'https://proxy.intra.bt.com:8080'
     }
     tools {nodejs "Node-Build"}
-    stages {
     docker.image('registry.docker.nat.bt.com/devops-eed/node:10.1.0').inside()
     {
+    stages{
         stage('Install Dependencies') {
             steps {
               //sh'pwd'
