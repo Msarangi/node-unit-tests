@@ -5,12 +5,10 @@ pipeline{
         HTTPS_PROXY = 'https://proxy.intra.bt.com:8080'
     }
     tools {nodejs "Node-Build"}
-    docker.image('registry.docker.nat.bt.com/devops-eed/node:10.1.0').inside()
-    {
     stages{
         stage('Install Dependencies') {
             steps {
-              //sh'pwd'
+                sh'pwd'
                 sh'node --version'
                 sh'npm --version'
                 echo "Installing dependencies"
@@ -26,9 +24,9 @@ pipeline{
         }
         stage('Test') {
             steps {
-                sh'npm install -g jasmine'
-                sh'jasmine'
-              //sh 'node_modules/jasmine/bin/jasmine.js'
+                //sh'npm install -g jasmine'
+                //sh'jasmine'
+              sh 'node_modules/jasmine/bin/jasmine.js'
               //junit 'node-junit/*.xml'
               //publishHTML target: [
                 //allowMissing: false,
@@ -37,7 +35,7 @@ pipeline{
                 //reportDir: 'coverage/lcov-report',
                 //reportFiles: 'index.html',
                 //reportName: 'NodeJS Coverage Report'
-                sh 'npm test'
+                //sh 'npm test'
             }
         }
         stage('SonarQube'){
