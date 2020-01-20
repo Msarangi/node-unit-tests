@@ -24,7 +24,7 @@ pipeline{
         }
         stage('Test') {
             steps {
-              sh 'node_modules/jasmine-node
+              sh 'node_modules/jasmine-node'
               //junit 'node-junit/*.xml'
               //publishHTML target: [
                 //allowMissing: false,
