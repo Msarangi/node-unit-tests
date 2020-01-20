@@ -24,6 +24,15 @@ pipeline{
         }
         stage('Test') {
             steps {
+              sh 'node_modules/jasmine-node
+              //junit 'node-junit/*.xml'
+              //publishHTML target: [
+                //allowMissing: false,
+                //alwaysLinkToLastBuild: false,
+                //keepAll: false,
+                //reportDir: 'coverage/lcov-report',
+                //reportFiles: 'index.html',
+                //reportName: 'NodeJS Coverage Report'
                 sh 'npm test'
             }
         }
