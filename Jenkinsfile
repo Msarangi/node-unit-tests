@@ -26,7 +26,7 @@ pipeline{
             steps {
                 //sh'npm install -g jasmine'
                 //sh'jasmine'
-              sh 'node_modules/jasmine/bin/jasmine.js'
+              sh 'node_modules/jasmine'
               //junit 'node-junit/*.xml'
               //publishHTML target: [
                 //allowMissing: false,
