@@ -9,8 +9,5 @@
     "test": "./node_modules/jasmine-node"
   },
   "author": "Jordan Kasper",
-  "license": "MIT",
-  "devDependencies": {
-    "jasmine": "^3.5.0"
-  }
+  "license": "MIT"
 }
