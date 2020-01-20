@@ -5,7 +5,8 @@
   "description": "A testbed for unit testing Node",
   "main": "server.js",
   "scripts": {
-    "start": "node your-script.js"
+    "start": "node your-script.js",
+    "test": "./node_modules/.bin/jasmine-node spec"
   },
   "author": "Jordan Kasper",
   "license": "MIT",
