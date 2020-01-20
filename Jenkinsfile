@@ -5,14 +5,16 @@ pipeline{
         HTTPS_PROXY = 'https://proxy.intra.bt.com:8080'
     }
     tools {nodejs "Node-Build"}
+    docker.image('registry.docker.nat.bt.com/devops-eed/node:10.1.0').inside()
+    {
     stages {
         stage('Install Dependencies') {
             steps {
-                sh'pwd'
+              //sh'pwd'
                 sh'node --version'
                 sh'npm --version'
                 echo "Installing dependencies"
-                //sh'npm install -D sonarqube-scanner'
+                sh'npm install'
             }
         }
         stage ('build') {
